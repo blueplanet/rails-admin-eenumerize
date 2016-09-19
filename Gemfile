@@ -24,6 +24,7 @@ gem 'config'
 
 gem 'rails_admin'
 gem 'enumerize'
+gem 'aasm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
