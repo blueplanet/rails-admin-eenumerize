@@ -1,6 +1,6 @@
 ja:
   enumerize:
-    user:
+    post:
       state:
         draft: 下書き
         requested: 申請中
