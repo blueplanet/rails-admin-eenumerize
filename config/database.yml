@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: rails5base_development
+  database: rails_admin_enumerize_development
 
 test:
   <<: *default
-  database: rails5base_test
+  database: rails_admin_enumerize_test
 
 production:
   <<: *default
-  database: rails5base_production
-  username: rails5base
+  database: rails_admin_enumerize_production
+  username: rails_admin_enumerize
   password: <%= ENV['RAILS_BASE_DATABASE_PASSWORD'] %>
