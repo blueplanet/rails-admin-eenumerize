@@ -1,0 +1,25 @@
+h1 Listing posts
+
+table.table
+  thead
+    tr
+      th Title
+      th Body
+      th State
+      th
+
+  tbody
+    - @posts.each do |post|
+      tr
+        td = post.title
+        td = post.body
+        td = post.state
+        td
+          .btn-group.btn-group-sm
+            = link_to 'Show', post, class: 'btn btn-default'
+            = link_to 'Edit', edit_post_path(post), class: 'btn btn-default'
+            = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'
+
+br
+
+= link_to 'New Post', new_post_path, class: 'btn btn-info'

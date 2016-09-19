@@ -1,0 +1,7 @@
+ja:
+  enumerize:
+    user:
+      state:
+        draft: 下書き
+        requested: 申請中
+        published: 公開中
